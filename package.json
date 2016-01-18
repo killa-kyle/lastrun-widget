@@ -1,0 +1,16 @@
+{
+  "name": "lastrun",
+  "version": "1.0.0",
+  "description": "Strava last run widget",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kyle Rose",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^12.0.1",
+    "express": "^4.13.3",
+    "strava-v3": "^1.8.1"
+  }
+}
