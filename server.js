@@ -14,19 +14,21 @@ app.use('/',express.static('app'));
 //         console.log(err);
 //     }
 // });
-
-
-strava.athlete.listActivities({type: 'run'},function(err,payload) {
-    if(!err) {
-        console.log(payload);
-        app.get('/activity', function (req, res) {
+app.get('/activity', function (req, res) {
+  strava.athlete.listActivities({type: 'run'},function(err,payload) {
+      if(!err) {
+          console.log(payload);
           res.send(payload);
-        });
-    }
-    else {
-        console.log(err);
-    }
+      }
+      else {
+          console.log(err);
+          res.send(err);
+      }
+  });
+
 });
+
+
 
 // strava.segments.explore({bounds:'40.700413399865205,-73.92954469070435,40.70692016085281,-73.92096162185669',activity_type:'running'}, function(err, payload){
 //     if(!err){
