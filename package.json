@@ -2,11 +2,19 @@
   "name": "lastrun",
   "version": "1.0.0",
   "description": "Strava last run widget",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "strava",
+    "heroku",
+    "node"
+  ],
   "author": "Kyle Rose",
+  "engines": {
+      "node": "0.12.4"
+    },
   "license": "ISC",
   "dependencies": {
     "browserify": "^12.0.1",
