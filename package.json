@@ -13,11 +13,12 @@
   ],
   "author": "Kyle Rose",
   "engines": {
-      "node": "0.12.4"
-    },
+    "node": "0.12.4"
+  },
   "license": "ISC",
   "dependencies": {
     "browserify": "^12.0.1",
+    "cors": "^2.7.1",
     "express": "^4.13.3",
     "strava-v3": "^1.8.1"
   }
