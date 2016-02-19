@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 var strava = require('strava-v3');
+var cors = require('cors');
+app.use(cors());
 
 app.use('/',express.static('app'));
 // strava.athlete.get({id:3341189},function(err,payload) {
